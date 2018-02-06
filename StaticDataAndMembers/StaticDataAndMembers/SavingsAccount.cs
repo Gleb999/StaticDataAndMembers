@@ -10,10 +10,21 @@ namespace StaticDataAndMembers
     {
         public double currBalance;
 
-        public static double currTnterestRate = 0.04;
+        public static double currInterestRate = 0.04;
         public SavingsAccount(double balance)
         {
             currBalance = balance;
+        }
+
+        public static void SetInterestRate(double newRate)
+        {
+            currInterestRate = newRate;
+
+        }
+
+        public static double GetInterestRate()
+        {
+            return currInterestRate;
         }
     }
 }
